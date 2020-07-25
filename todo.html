@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>todo-app</title>
+    <style>
+        .heading {
+            width: 60% !important;
+            margin: 0 auto !important;
+            text-align: center;
+            text-transform: uppercase;
+            background: #19b1c0;
+            color: white;
+            margin-bottom: 25px !important;
+            margin-top: 20px !important;
+        }
+
+        .card {
+            background-color: #FFF !important;
+            border: none !important;
+            width: 70% !important;
+            margin: 0 auto !important;
+            padding: 40px 30px 20px 30px;
+            min-height: 250px;
+            box-shadow: 0 0 8px 2px #888;
+        }
+
+        input.task,
+        input#task {
+            border: none !important;
+            background: none !important;
+            border-bottom: 2px solid #19b1c0 !important;
+            font-size: 20px;
+            padding-left: 10px;
+            outline: none;
+        }
+
+        #task:focus,
+        .task:focus {
+            border: none !important;
+            background: none !important;
+            border-bottom: 2px solid #19b1c0 !important;
+            outline: none;
+        }
+
+        .btn {
+            background: #19b1c0;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 60px
+        }
+
+        .pr-0 {
+            padding-right: 0 !important;
+        }
+
+        .mt-24 {
+            margin-top: 24px;
+        }
+
+        .bb-none {
+            border-bottom: none !important;
+        }
+
+        button.secbtn {
+            margin-left: 15px;
+        }
+
+        .error {
+            padding-left: 10px;
+            color: red;
+            font-size: 20px;
+            margin: 0 !important;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="heading">
+                    <h1>
+                        TODO App
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-7">
+                            <input type="text" name="task" id="task" class="w-100" placeholder="Enter Task">
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-2 mt-1">
+                            <button id="btnadd" class="btn w-100">Add</button>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3 mt-1">
+                            <button id="btndeltall" class="btn w-100">Delete all</button>
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="error hide">Enter task</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="js/todo.js"></script>
+</body>
+
+</html>
